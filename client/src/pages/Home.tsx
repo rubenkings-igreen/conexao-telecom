@@ -411,7 +411,7 @@ export default function Home() {
 
       {/* CTA FINAL */}
       <section 
-        className="py-16 md:py-24 relative overflow-hidden"
+        className="py-20 md:py-32 relative overflow-hidden"
         style={{
           backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663445259424/EZVLwJBgtdZUVxGXLNir8r/cta-background-nbGZwm5WnYtnxDTm58pDwz.webp')",
           backgroundSize: "cover",
@@ -421,19 +421,19 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50"></div>
         
         <div className="container relative z-10">
-          <div className="text-center space-y-6 md:space-y-8 max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <div className="text-center space-y-8 md:space-y-10 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
               {t.ready}
             </h2>
-            <p className="text-lg md:text-xl text-white/90">
+            <p className="text-base md:text-lg lg:text-xl text-white/90 leading-relaxed">
               {t.readyDesc}
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 md:pt-8">
-              <Button className="btn-primary text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 md:pt-10 pb-4">
+              <Button className="btn-primary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto w-full sm:w-auto">
                 {t.ctaPlan}
               </Button>
-              <Button className="btn-secondary text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto flex items-center justify-center gap-2">
+              <Button className="btn-secondary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto flex items-center justify-center gap-2 w-full sm:w-auto">
                 <MessageCircle size={20} />
                 {t.ctaWhatsApp}
               </Button>
@@ -443,13 +443,13 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-slate-900 text-white py-8 md:py-12">
+      <footer className="bg-slate-900 text-white py-10 md:py-16">
         <div className="container">
-          <div className="border-t border-slate-700 pt-6 md:pt-8">
-            <p className="text-center text-slate-400 text-xs md:text-sm">
+          <div className="border-t border-slate-700 pt-8 md:pt-12">
+            <p className="text-center text-slate-400 text-sm md:text-base">
               {t.footer}
             </p>
-            <p className="text-center text-slate-500 text-xs mt-3 md:mt-4">
+            <p className="text-center text-slate-500 text-xs md:text-sm mt-4 md:mt-6">
               {t.footerRights}
             </p>
           </div>
