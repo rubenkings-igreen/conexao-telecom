@@ -328,8 +328,6 @@ export default function Home() {
                       <span>{t.freeClub}</span>
                     </div>
                   </div>
-
-                  <Button className="w-full btn-primary text-sm md:text-base">{t.selectPlan}</Button>
                 </CardContent>
               </Card>
             ))}
