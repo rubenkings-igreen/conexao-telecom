@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MessageCircle, Zap, Gift, Shield, TrendingUp, Leaf, Globe, Check, Smartphone, Wifi, Lightbulb, ShoppingCart, RotateCw } from "lucide-react";
+import { Phone, MessageCircle, Zap, Gift, Shield, TrendingUp, Leaf, Globe, Check, Smartphone, Wifi, Lightbulb, ShoppingCart, RotateCw, Users, DollarSign, Target } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -46,6 +46,17 @@ const translations = {
     unlimitedWhatsApp: "WhatsApp ilimitado",
     accumulatedData: "Internet acumulada",
     freeClub: "iGreen Club grátis",
+    cashbackTitle: "Indique Amigos e Ganhe Cashback",
+    cashbackDesc: "Quanto mais amigos você indicar, mais cashback você acumula. Você pode até zerar sua fatura mensal!",
+    referralSteps: "Como funciona:",
+    step1: "Indique um amigo ou colega",
+    step1Desc: "Compartilhe seu código de indicação",
+    step2: "Amigo ativa o plano",
+    step2Desc: "Seu indicado contrata um plano Conexão Telecom",
+    step3: "Você ganha cashback",
+    step3Desc: "Receba cashback na sua conta mensalmente",
+    step4: "Zere sua fatura",
+    step4Desc: "Acumule cashback e reduza ou zere seu pagamento",
   },
   en: {
     tagline: "Virtual Mobile Operator of iGreen Energy",
@@ -76,6 +87,17 @@ const translations = {
     unlimitedWhatsApp: "Unlimited WhatsApp",
     accumulatedData: "Accumulated data",
     freeClub: "Free iGreen Club",
+    cashbackTitle: "Refer Friends and Earn Cashback",
+    cashbackDesc: "The more friends you refer, the more cashback you accumulate. You can even zero out your monthly bill!",
+    referralSteps: "How it works:",
+    step1: "Refer a friend or colleague",
+    step1Desc: "Share your referral code",
+    step2: "Friend activates a plan",
+    step2Desc: "Your referral signs up for a Conexao Telecom plan",
+    step3: "You earn cashback",
+    step3Desc: "Receive cashback in your account monthly",
+    step4: "Zero out your bill",
+    step4Desc: "Accumulate cashback and reduce or eliminate your payment",
   }
 };
 
@@ -232,6 +254,70 @@ export default function Home() {
                 <p className="text-2xl md:text-3xl font-bold text-slate-900">0%</p>
                 <p className="text-xs md:text-sm text-slate-600 mt-2">{t.noFidelity}</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* CASHBACK E INDICAÇÃO */}
+      <section className="py-16 md:py-24 bg-gradient-to-r from-[#1B8A3E]/10 to-[#0066CC]/10 border-y border-slate-200">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+                {t.cashbackTitle}
+              </h2>
+              <p className="text-base md:text-lg text-slate-700 leading-relaxed">
+                {t.cashbackDesc}
+              </p>
+            </div>
+
+            {/* Steps Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Step 1 */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#1B8A3E] to-[#0066CC] flex items-center justify-center mx-auto">
+                  <Users size={32} className="text-white" />
+                </div>
+                <h3 className="font-bold text-slate-900 text-lg">{t.step1}</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">{t.step1Desc}</p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0066CC] to-[#1B8A3E] flex items-center justify-center mx-auto">
+                  <Smartphone size={32} className="text-white" />
+                </div>
+                <h3 className="font-bold text-slate-900 text-lg">{t.step2}</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">{t.step2Desc}</p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#1B8A3E] to-[#0066CC] flex items-center justify-center mx-auto">
+                  <DollarSign size={32} className="text-white" />
+                </div>
+                <h3 className="font-bold text-slate-900 text-lg">{t.step3}</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">{t.step3Desc}</p>
+              </div>
+
+              {/* Step 4 */}
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0066CC] to-[#1B8A3E] flex items-center justify-center mx-auto">
+                  <Target size={32} className="text-white" />
+                </div>
+                <h3 className="font-bold text-slate-900 text-lg">{t.step4}</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">{t.step4Desc}</p>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center mt-12 md:mt-16">
+              <Button className="btn-primary text-base md:text-lg px-8 md:px-12 py-6 md:py-7 h-auto">
+                {t.ctaWhatsApp}
+              </Button>
             </div>
           </div>
         </div>
