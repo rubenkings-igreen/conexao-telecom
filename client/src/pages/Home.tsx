@@ -57,6 +57,7 @@ const translations = {
     step3Desc: "Receba cashback na sua conta mensalmente",
     step4: "Zere sua fatura",
     step4Desc: "Acumule cashback e reduza ou zere seu pagamento",
+    whatsappMessage: "Oi! Gostaria de saber mais sobre os planos da Conexão Telecom e como funciona o programa de cashback.",
   },
   en: {
     tagline: "Virtual Mobile Operator of iGreen Energy",
@@ -98,6 +99,7 @@ const translations = {
     step3Desc: "Receive cashback in your account monthly",
     step4: "Zero out your bill",
     step4Desc: "Accumulate cashback and reduce or eliminate your payment",
+    whatsappMessage: "Hi! I'd like to know more about Conexão Telecom plans and how the cashback program works.",
   }
 };
 
@@ -234,10 +236,15 @@ export default function Home() {
               <Button className="btn-primary text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto flex-1 sm:flex-none">
                 {t.ctaPlan}
               </Button>
-              <Button className="btn-secondary text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto flex items-center justify-center gap-2 flex-1 sm:flex-none">
+              <a
+                href={`https://wa.me/66999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto flex items-center justify-center gap-2 flex-1 sm:flex-none rounded-lg font-semibold transition-all hover:opacity-90"
+              >
                 <MessageCircle size={20} />
                 {t.ctaWhatsApp}
-              </Button>
+              </a>
             </div>
 
             {/* Trust Indicators */}
@@ -315,9 +322,14 @@ export default function Home() {
 
             {/* CTA Button */}
             <div className="text-center mt-12 md:mt-16">
-              <Button className="btn-primary text-base md:text-lg px-8 md:px-12 py-6 md:py-7 h-auto">
+              <a
+                href={`https://wa.me/66999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-base md:text-lg px-8 md:px-12 py-6 md:py-7 h-auto inline-flex items-center justify-center rounded-lg font-semibold transition-all hover:opacity-90"
+              >
                 {t.ctaWhatsApp}
-              </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -517,10 +529,15 @@ export default function Home() {
               <Button className="btn-primary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto w-full sm:w-auto">
                 {t.ctaPlan}
               </Button>
-              <Button className="btn-secondary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto flex items-center justify-center gap-2 w-full sm:w-auto">
+              <a
+                href={`https://wa.me/66999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto flex items-center justify-center gap-2 w-full sm:w-auto rounded-lg font-semibold transition-all hover:opacity-90"
+              >
                 <MessageCircle size={20} />
                 {t.ctaWhatsApp}
-              </Button>
+              </a>
             </div>
           </div>
         </div>
