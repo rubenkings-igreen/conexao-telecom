@@ -232,15 +232,12 @@ export default function Home() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-primary text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto flex-1 sm:flex-none">
-                {t.ctaPlan}
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`https://wa.me/66999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto flex items-center justify-center gap-2 flex-1 sm:flex-none rounded-lg font-semibold transition-all hover:opacity-90"
+                className="btn-secondary text-base md:text-lg px-8 md:px-12 py-5 md:py-6 h-auto flex items-center justify-center gap-2 rounded-lg font-semibold transition-all hover:opacity-90"
               >
                 <MessageCircle size={20} />
                 {t.ctaWhatsApp}
@@ -526,14 +523,11 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 md:pt-10 pb-4">
-              <Button className="btn-primary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto w-full sm:w-auto">
-                {t.ctaPlan}
-              </Button>
               <a
                 href={`https://wa.me/66999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto flex items-center justify-center gap-2 w-full sm:w-auto rounded-lg font-semibold transition-all hover:opacity-90"
+                className="btn-secondary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto flex items-center justify-center gap-2 rounded-lg font-semibold transition-all hover:opacity-90"
               >
                 <MessageCircle size={20} />
                 {t.ctaWhatsApp}
