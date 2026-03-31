@@ -234,7 +234,7 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`https://wa.me/66999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
+                href={`https://wa.me/5566999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary text-base md:text-lg px-8 md:px-12 py-5 md:py-6 h-auto flex items-center justify-center gap-2 rounded-lg font-semibold transition-all hover:opacity-90"
@@ -320,7 +320,7 @@ export default function Home() {
             {/* CTA Button */}
             <div className="text-center mt-12 md:mt-16">
               <a
-                href={`https://wa.me/66999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
+                href={`https://wa.me/5566999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-base md:text-lg px-8 md:px-12 py-6 md:py-7 h-auto inline-flex items-center justify-center rounded-lg font-semibold transition-all hover:opacity-90"
@@ -524,7 +524,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 md:pt-10 pb-4">
               <a
-                href={`https://wa.me/66999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
+                href={`https://wa.me/5566999917102?text=${encodeURIComponent(t.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto flex items-center justify-center gap-2 rounded-lg font-semibold transition-all hover:opacity-90"
